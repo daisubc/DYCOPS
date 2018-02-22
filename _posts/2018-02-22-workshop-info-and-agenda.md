@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Workshop Description
-subtitle: Details about the workshop's goals and agenda
+title: Workshop Details
+subtitle: Advanced Tools for Process Data Analytics
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
-tags: [test]
+tags: 
 ---
 
 ### Learning Outcomes
@@ -15,9 +15,9 @@ By the end of this workshop, registrants will be able to:
 
 ### Introduction
 
-#### Advanced Tools for Process Data Analytics
-##### Bhushan Gopaluni, Yiting Tsai, Aditya Tulsyan, Lee Rippon
-##### Guest Speakers: Prof. Sirish. L. Shah (University of Alberta), Prof. Richard Braatz (Massachusetts Institute of Technology)
+**Bhushan Gopaluni, Yiting Tsai, Aditya Tulsyan, Lee Rippon** 
+
+_**Guest Speakers: Prof. Sirish. L. Shah (University of Alberta), Prof. Richard Braatz (Massachusetts Institute of Technology)**_ 
 
 We are currently at the cusp of what is considered the fourth industrial revolution. This revolution is driven
 by the ubiquitous cyber-physical systems, algorithmic developments in artificial intelligence, gargantuan
@@ -90,7 +90,7 @@ exercises and receive take away software code to implement these algorithms.
 The sequence of workshop presentations will follow the tentative schedule below:
 
 | **Start time** | **End time** | **Presenter** | **Content** |
-| :------------- | :----------- | :------------ | :---------- |
+| :-------------: | :-----------: | :------------: | :----------: |
 | 8:00 AM | 9:00 AM | Richard Braatz | Big Data Analytics |
 | 9:00 AM | 10:00 AM | Bhushan Gopaluni | Classification |
 | 10:00 AM | 11:00 AM | Yiting Tsai | Regression |
