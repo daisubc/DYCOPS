@@ -1,72 +1,363 @@
----
-layout: page
-title: ADCHEM
-subtitle: Data Analytics Workshop
-use-site-title: true
----
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Beautiful Jekyll | MIT license | Copyright Dean Attali 2016 -->
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<div class="posts-list">
-  {% for post in paginator.posts %}
+  <title>ADCHEM - A virtual proof that name is awesome!</title>
+
+  <meta name="author" content="Shams Elnawawi" />
+
+  
+  <meta name="description" content="Data Analytics Workshop">
+  
+
+  <link rel="alternate" type="application/rss+xml" title="ADCHEM - A virtual proof that name is awesome!" href="/adchem/feed.xml" />
+
+  
+
+  
+    
+      
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" />
+
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="/adchem/css/bootstrap.min.css" />
+    
+      <link rel="stylesheet" href="/adchem/css/bootstrap-social.css" />
+    
+      <link rel="stylesheet" href="/adchem/css/main.css" />
+    
+  
+
+  
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+    
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+    
+  
+
+  
+
+  
+
+  
+
+    <!-- Facebook OpenGraph tags -->
+  
+
+  
+  <meta property="og:title" content="ADCHEM" />
+  
+
+   
+  <meta property="og:description" content="Data Analytics Workshop">
+  
+
+
+  <meta property="og:type" content="website" />
+
+  
+  <meta property="og:url" content="http://localhost:4000/" />
+  <link rel="canonical" href="http://localhost:4000/" />
+  
+
+  
+  <meta property="og:image" content="http://localhost:4000/img/adchem.png" />
+  
+
+
+  <!-- Twitter summary cards -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@" />
+  <meta name="twitter:creator" content="@" />
+
+  
+  <meta name="twitter:title" content="ADCHEM" />
+  
+
+  
+  <meta name="twitter:description" content="Data Analytics Workshop">
+  
+
+  
+  <meta name="twitter:image" content="http://localhost:4000/img/adchem.png" />
+  
+
+  
+
+</head>
+
+
+  <body>
+
+    
+  
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+        <a class="navbar-brand" href="http://localhost:4000">ADCHEM</a>
+      
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+          <li class="navlinks-container">
+            <a class="navlinks-parent" href="javascript:void(0)">Workshop Details</a>
+            <div class="navlinks-children">
+              
+                
+                  
+
+
+
+
+
+
+<a href="/adchem/courseplan.html">Course Plan</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/adchem/schedule.html">Schedule</a>
+
+                
+              
+                
+                  
+
+
+
+
+
+
+<a href="/adchem/presenters.html">Presenters</a>
+
+                
+              
+            </div>
+          </li>
+        
+        
+        
+          <li>
+            
+
+
+
+
+
+
+<a href="https://dais.chbe.ubc.ca/adchem">Home</a>
+
+          </li>
+        
+        
+      </ul>
+    </div>
+
+	
+	<div class="avatar-container">
+	  <div class="avatar-img-border">
+	    <a href="http://localhost:4000 ">
+	      <img class="avatar-img" src="/adchem/img/adchem.png" />
+		</a>
+	  </div>
+	</div>
+	
+
+  </div>
+</nav>
+
+
+    <!-- TODO this file has become a mess, refactor it -->
+
+
+
+
+
+<header class="header-section ">
+
+<div class="intro-header no-img">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="page-heading">
+          <h1>ADCHEM</h1>
+		  
+		    
+            <hr class="small">
+            <span class="page-subheading">Data Analytics Workshop</span>
+			
+		  
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="posts-list">
+  
   <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+    <a href="/adchem/2018-03-03-richard-braatz-presentation/">
+	  <h2 class="post-title">The Emerging Role of Big Data, Data Analytics, and Machine Learning in the Process Industries</h2>
 
-	  {% if post.subtitle %}
+	  
 	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
+	    A presentation by Dr. Richard D. Braatz
 	  </h3>
-	  {% endif %}
+	  
     </a>
 
     <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
+      Posted on March 3, 2018
     </p>
 
     <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
+      
       <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+        Big Data, data analytics, and machine learning have opportunities for diagnostic, prognostics, and decision making in the process industries. This presentation describes the emerging role of these tools, including for: The extraction of information from high-order tensor data structures, which arise from spatially resolved photoluminescence, spectral imaging, and color video...
+        
+        
+          <a href="/adchem/2018-03-03-richard-braatz-presentation/" class="post-read-more">[Read&nbsp;More]</a>
+        
       </div>
     </div>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-      Tags:
-      {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
-      {% else %}
-        {{ post.tags | join: ", " }}
-      {% endif %}
-    </div>
-    {% endif %}
+    
 
    </article>
-  {% endfor %}
+  
+  <article class="post-preview">
+    <a href="/adchem/2018-02-22-workshop-info-and-agenda/">
+	  <h2 class="post-title">Workshop Details</h2>
+
+	  
+	  <h3 class="post-subtitle">
+	    Advanced Tools for Process Data Analytics
+	  </h3>
+	  
+    </a>
+
+    <p class="post-meta">
+      Posted on February 22, 2018
+    </p>
+
+    <div class="post-entry-container">
+      
+      <div class="post-entry">
+        Learning Outcomes
+
+
+        
+        
+          <a href="/adchem/2018-02-22-workshop-info-and-agenda/" class="post-read-more">[Read&nbsp;More]</a>
+        
+      </div>
+    </div>
+
+    
+
+   </article>
+  
 </div>
 
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-  {% if paginator.previous_page %}
-  <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
-{% endif %}
+
+
+	    
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="container beautiful-jekyll-footer">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links"></ul>
+      <p class="copyright text-muted">
+      Shams Elnawawi
+      &nbsp;&bull;&nbsp;
+      2018
+
+      
+
+      
+      </p>
+          <!-- Please don't remove this, keep my open source work credited :) -->
+    <p class="theme-by text-muted">
+      Theme by
+      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+    </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+    
+
+
+
+
+
+
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+      <script>
+      	if (typeof jQuery == 'undefined') {
+      	  document.write('<script src="/adchem/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+      	}
+      </script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/adchem/js/bootstrap.min.js"></script>
+    
+  
+    <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
+    
+	<script src="/adchem/js/main.js"></script>
+    
+  
+
+
+
+
+  
+  </body>
+</html>
