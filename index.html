@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>ADCHEM - A virtual proof that name is awesome!</title>
+  <title>ADCHEM | DAIS UBC</title>
 
-  <meta name="author" content="Shams Elnawawi" />
+  <meta name="author" content="Some Person" />
 
   
   <meta name="description" content="Data Analytics Workshop">
@@ -70,7 +70,7 @@
   
 
   
-  <meta property="og:image" content="http://localhost:4000/img/adchem.png" />
+  <meta property="og:image" content="http://localhost:4000/img/avatar-icon.png" />
   
 
 
@@ -88,7 +88,7 @@
   
 
   
-  <meta name="twitter:image" content="http://localhost:4000/img/adchem.png" />
+  <meta name="twitter:image" content="http://localhost:4000/img/avatar-icon.png" />
   
 
   
@@ -110,84 +110,42 @@
         <span class="icon-bar"></span>
       </button>
       
-        <a class="navbar-brand" href="http://localhost:4000">ADCHEM</a>
-      
+        <a class="navbar-brand navtext" href="http://localhost:4000/adchem" style="color: #4874ba">Home</a>  
     </div>
-
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-      
+<!--         ***NAV LINKS***
+        - Home done
+        - Workshop details
+          - Course Plan
+          - Schedule
+          - Presenters
+        - About ADCHEM done
+        - Contact -->
         
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">Workshop Details</a>
-            <div class="navlinks-children">
-              
-                
-                  
+        <li class="navlinks-container">
+            <a class="navlinks-parent navtext" href="javascript:void(0)" style="color: #4874ba">Workshop Details</a>
+            <div class="navlinks-children"> 
 
+              <a href="courseplan.html">Course Plan</a>
 
+              <a href="schedule.html">Schedule</a>
 
-
-
-
-<a href="/adchem/courseplan.html">Course Plan</a>
-
-                
-              
-                
-                  
-
-
-
-
-
-
-<a href="/adchem/schedule.html">Schedule</a>
-
-                
-              
-                
-                  
-
-
-
-
-
-
-<a href="/adchem/presenters.html">Presenters</a>
-
-                
-              
+              <a href="people.html">Our People</a>
             </div>
           </li>
-        
-        
-        
-          <li>
-            
-
-
-
-
-
-
-<a href="https://dais.chbe.ubc.ca/adchem">Home</a>
-
-          </li>
-        
-        
       </ul>
     </div>
 
-	
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="http://localhost:4000 ">
-	      <img class="avatar-img" src="/adchem/img/adchem.png" />
-		</a>
-	  </div>
-	</div>
-	
+  
+  <div class="avatar-container">
+    <div class="avatar-img-border">
+      <a href="#">
+        <img class="avatar-img" style="width: 250px; height: auto;" src="/adchem/img/adchem.png" />
+    </a>
+    </div>
+  </div>
+  
 
   </div>
 </nav>
@@ -206,16 +164,27 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>ADCHEM</h1>
-		  
-		    
-            <hr class="small">
             <span class="page-subheading">Data Analytics Workshop</span>
-			
-		  
-		  
-		  
+            <span class="page-subheading" style="font-size: 15pt; color: #878787;"><br>Shenyang, China<br><br>July 25 - 27, 2018</span><br>
         </div>
+
+        <ul class="list-inline text-center footer-links"><li><a href="https://github.com/daisubc/adchem" title="GitHub"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x" style="color: #4874ba"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li>
+
+            <li><a href="www.adchem2018.org" title="ADCHEM website"><span class="fa-stack fa-lg" aria-hidden="true">
+                  <i class="fa fa-circle fa-stack-2x" style="color: #4874ba"></i>
+                  <i class="fa fa-external-link fa-stack-1x fa-inverse"></i>
+                </span>
+                <span class="sr-only">ADCHEM website</span>
+              </a>
+            </li>
+
+          </ul>
       </div>
     </div>
   </div>
@@ -223,72 +192,57 @@
 </header>
 
 
-
-
-<div class="container" role="main">
+<div class="container-fluid" role="main">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <div class="container-fluid col-sm-3" style="text-align: center" id="summarycol">
+      <h2 class="post-title" style="font-weight: 700">Description</h2>
+    </div>
+
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry"> This workshop will introduce the essential machine learning algorithms and software tools for graduate students, experienced researchers and engineers working in the industry. Elementary knowledge of probability and statistics is required to attend this workshop. The workshop will also feature at least two confirmed guest speakers with decades of experience in data analytics. Prof. Sirish L. Shah of University of Alberta and Prof. Richard D. Braatz of Massachusetts Institute of Technology have both agreed to speak during the workshop. We have also invited an industrial guest speaker.</p>
+    </div>
+  </div>
+
+  <div class="row" style="background-color: #F6F6F6">
+    <div class="container-fluid col-sm-3" style="text-align: center" id="summarycol">
+      <h2 class="post-title" style="font-weight: 700">Workshop Overview</h2>
+    </div>
+
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry">We are currently at the cusp of what is considered the fourth industrial revolution. This revolution is driven by the ubiquitous cyber-physical systems, algorithmic developments in artificial intelligence, gargantuan computing power, inexpensive memory and the gigantic volumes of data that are being collected. The process industries are in possession of treasure troves of heterogenous data that is gravely under utilized. The competitive global environment, and the ever increasing demands on energy, environment and quality are subjecting these industries to a high level of economic pressure. The incredible volumes of data that they already possess are poised to provide a level of automation and efficiency never seen before and thus alleviate the economic and competitive pressures.<br><br>Process industries have been using data analytics in various forms for more than three decades. In particular, statistical techniques such as principal component analysis (PCA), partial least squares (PLS), canonical variate analysis (CVA) and time series methods for modeling such as maximum likelihood estimation, prediction error methods have been extensively applied on industrial data. The recent developments in machine
+      learning and artificial intelligence provide a new opening for using process data on large scale problems.
+      However, in order to successfully apply machine learning methods to process data, researchers require not
+      only a high level understanding of the algorithms but also strong programming knowledge in packages such
+      as Python, TensorFlow, Keras and Jupyter.</p>
+    </div>
+  </div>
       <div class="posts-list">
-  
-  <article class="post-preview">
-    <a href="/adchem/2018-03-03-richard-braatz-presentation/">
-	  <h2 class="post-title">The Emerging Role of Big Data, Data Analytics, and Machine Learning in the Process Industries</h2>
+      <h2 class="post-title" style="font-weight: 700; padding:20px">Recent Posts</h2>
+        <article class="post-preview" style="margin-left: 50px">
+          <a href="/adchem/2018-02-22-workshop-info-and-agenda/">
+          <h2 class="post-title" style="font-weight: 600">Workshop Details</h2>
 
-	  
-	  <h3 class="post-subtitle">
-	    A presentation by Dr. Richard D. Braatz
-	  </h3>
-	  
-    </a>
+          
+          <h3 class="post-subtitle">
+            Advanced Tools for Process Data Analytics
+          </h3>
+          
+          </a>
 
-    <p class="post-meta">
-      Posted on March 3, 2018
-    </p>
+          <p class="post-meta">
+            Posted on February 22, 2018
+          </p>
 
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        Big Data, data analytics, and machine learning have opportunities for diagnostic, prognostics, and decision making in the process industries. This presentation describes the emerging role of these tools, including for: The extraction of information from high-order tensor data structures, which arise from spatially resolved photoluminescence, spectral imaging, and color video...
-        
-        
-          <a href="/adchem/2018-03-03-richard-braatz-presentation/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
+          <div class="post-entry-container">
+            
+            <div class="post-entry">
+              Learning Outcomes
+                <a href="/adchem/2018-02-22-workshop-info-and-agenda/" class="post-read-more">[Read&nbsp;More]</a>
+              
+            </div>
+          </div>
 
-    
-
-   </article>
-  
-  <article class="post-preview">
-    <a href="/adchem/2018-02-22-workshop-info-and-agenda/">
-	  <h2 class="post-title">Workshop Details</h2>
-
-	  
-	  <h3 class="post-subtitle">
-	    Advanced Tools for Process Data Analytics
-	  </h3>
-	  
-    </a>
-
-    <p class="post-meta">
-      Posted on February 22, 2018
-    </p>
-
-    <div class="post-entry-container">
-      
-      <div class="post-entry">
-        Learning Outcomes
-
-
-        
-        
-          <a href="/adchem/2018-02-22-workshop-info-and-agenda/" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-    </div>
-
-    
+          
 
    </article>
   
@@ -296,31 +250,19 @@
 
 
 
-	    
+      
     </div>
   </div>
 </div>
 
 
-    <footer>
-  <div class="container beautiful-jekyll-footer">
+<footer>
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <ul class="list-inline text-center footer-links"></ul>
-      <p class="copyright text-muted">
-      Shams Elnawawi
-      &nbsp;&bull;&nbsp;
-      2018
-
-      
-
-      
-      </p>
-          <!-- Please don't remove this, keep my open source work credited :) -->
-    <p class="theme-by text-muted">
-      Theme by
-      <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-    </p>
+        <p class="copyright text-muted">
+          &copy Copyright 2017 DAIS Lab. Bhushan Gopaluni.
+        </p>
       </div>
     </div>
   </div>
@@ -338,20 +280,20 @@
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     
       <script>
-      	if (typeof jQuery == 'undefined') {
-      	  document.write('<script src="/adchem/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
-      	}
+        if (typeof jQuery == 'undefined') {
+          document.write('<script src="/adchem/js/jquery-1.11.2.min.js"></scr' + 'ipt>');
+        }
       </script>
     
   
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     
-	<script src="/adchem/js/bootstrap.min.js"></script>
+  <script src="/adchem/js/bootstrap.min.js"></script>
     
   
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     
-	<script src="/adchem/js/main.js"></script>
+  <script src="/adchem/js/main.js"></script>
     
   
 
