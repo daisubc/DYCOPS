@@ -772,3 +772,15 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+.schedulecoltext {
+  font-weight:300;
+  font-size:16pt;
+  vertical-align: center;
+  text-align: center;
+}
+
+.tabletext {
+  vertical-align: center;
+  text-align: center;
+}
