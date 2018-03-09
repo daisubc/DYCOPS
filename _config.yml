@@ -14,17 +14,17 @@ baseurl: "/adchem"
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: ADCHEM UBC
+title: ADCHEM
 # Short description of your site
-description:
+description: DAIS UBC
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "https://dais.chbe.ubc.ca/adchem"
   Workshop Details:
     - Course Plan: "courseplan.html"
+    - Presentations: "presentations.html"
     - Schedule: "schedule.html"
     - Our People: "people.html"
 
