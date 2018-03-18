@@ -1,7 +1,7 @@
 ---
 layout: project
 title: ADCHEM Course Plan
-permalink: courseplan
+permalink: /courseplan
 ---
 
 Starting with an elementary introduction to statistics and probability, we will develop various regression, classification, dimensionlity reduction and advanced learning algorithms that are of interest to engineers. In addition, various widely-used machine learning software packages will be introduced. Registrants will solve exercises and receive take-away software code to implement these algorithms. The course will start with basics of probability and statistics, underfitting, overfitting and bias-variance tradeoff. After that, the course will consist of the following:

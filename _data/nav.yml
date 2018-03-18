@@ -1,13 +1,13 @@
 pages:
 
 - title: About
-  url: /about/
+  url: /about
 
 - title: Team
-  url: /team/
+  url: /team
 
 - title: Course Plan
-  url: /courseplan/
+  url: /courseplan
 
 - title: Presentations
-  url: /presentations/
+  url: /presentations

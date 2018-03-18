@@ -1,7 +1,7 @@
 ---
 layout: info
 title: About ADCHEM
-permalink: /about/
+permalink: /about
 ---
 
 ## ADCHEM 2018
