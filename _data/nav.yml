@@ -1,0 +1,13 @@
+pages:
+
+- title: About
+  url: /about/
+
+- title: Team
+  url: /team/
+
+- title: Course Plan
+  url: /courseplan/
+
+- title: Presentations
+  url: /presentations/

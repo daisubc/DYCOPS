@@ -1,55 +1,25 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {% if site.title-img %}
-      <img src="{{ site.title-img }}"/>
-      {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
-      {% endif %}
-    </div>
-
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
-        {% if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
-                {% endfor %}
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li>
-            {% include navbarlink.html link=link %}
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-	  </div>
-	</div>
-	{% endif %}
-
-  </div>
+<!-- Credits: https://codepen.io/riogrande/pen/gbXxdx -->
+<nav itemscope='itemscope' itemtype='http://schema.org/SiteNavigationElement' role='navigation'>
+<ul>
+	<li></li>
+    {% for item in site.data.nav.pages %}
+      <li><a class="smooth-scroll-middle" href="{{ item.url }}" itemprop="url" alt="{{ item.title }}" title="{{ item.title }}"><span itemprop='name'>{{ item.title }}</span></a></li>
+    {% endfor %}
+</ul>
+<div class="button-nav">
+	<a class="btn-open" href="#"></a>
+</div>
 </nav>
+<div class="overlay" id="navigation-overlay">
+	<div class="wrap">
+		<ul class="wrap-nav">
+			<li>
+			<a href="/">HOME</a></li>
+			<ul>
+			    {% for item in site.data.nav.pages %}
+			      <li><a class="smooth-scroll-middle" href="{{ item.url }}" itemprop="url" alt="{{ item.title }}" title="{{ item.title }}"><span itemprop='name'>{{ item.title }}</span></a></li>
+			    {% endfor %}
+			</ul>
+		</ul>
+	</div>
+</div>
