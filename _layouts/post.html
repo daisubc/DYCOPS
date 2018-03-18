@@ -1,75 +1,108 @@
 ---
-layout: base
+layout: default
 ---
+{% include mathjax.html %}
 
-{% include header.html type="post" %}
+{% assign author_array = "" | split: "," %}
+{% for name in page.author %}
+  {% assign author = site.members | where:"name", name | first %}
+  {% if author == null %}
+  {% assign author_array = author_array | push: name %}
+  {% else %}
+  {% capture link %}<a href="{{ author.url }}">{{ author.name }}</a>{% endcapture %}
+  {% assign author_array = author_array | push: link %}
+  {% endif %}
+{% endfor %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<section class="wrapper style1 content-align-left">
+  <div class="inner">
+    <p><a href="/blog/"><h3>Envision <strong>Blog</strong></h3></a></p>
+    <header class="align-center box no-mathjax blog-header">
+      <h1 id="post-title" title="Article Title" itemprop="name">{{ page.title }}</h1>
+      <p id="post-author" title="Article Authors" itemprop="author">By 
+        {{ author_array | array_to_sentence_string }}
+      </p>
+      <p>
+        <b><span title="Date Published">Published {{ page.date | date: "%b %-d, %Y" }}</span></b> 
+        <span class="reading-time-article" title="Estimated read time">
+            {% assign words = content | number_of_words %}
+            {% if words < 360 %}
+              1 min
+            {% else %}
+              {{ words | divided_by:180 }} mins
+            {% endif %}
+            read
+          </span>
+        </p>
+    </header>
 
-      {% if page.gh-repo %}
-        {% assign gh_split =  page.gh-repo | split:'/'  %}
-        {% assign gh_user =  gh_split[0]  %}
-        {% assign gh_repo =  gh_split[1]  %}
-
-        <div id="header-gh-btns">
-          {% if page.gh-badge.size > 0 %}
-            {% for badge in page.gh-badge %}
-              {% case badge %}
-                {% when 'star'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'watch'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'fork'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'follow'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
-              {% endcase %}
-            {% endfor %}
-          {% endif %}
-        </div>
-      {% endif %}
-
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
-
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-          {% endfor %}
+    <div class="index">
+    <section>
+      <div class="content blog-container">
+        <section id="blog-content" class="style1 wrapper container mathjax">
+          {{ content }}
+          <hr>
+        </section>
+        {% include ad_blog.html %}
+      </div>
+      <header>
+        {% assign author_box = "" | split: ":" %}
+        {% for name in page.author %}
+          {% assign author = site.members | where:"name", name | first %}
+          {% if author == null %}
+          {% capture div %}
+          <div class="box align-center">
+            <div class="blog-authors">
+            <img alt="{{name}}" src="{{ '/assets/images/members/default.png' | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
+            <span class="blog-author-name">{{name}}</span>
+            </div>
+          </div>
+          {% endcapture %}   
+          {% assign author_box = author_box | push: div %}       
           {% else %}
-            {{ page.tags | join: ", " }}
+          {% capture div %}
+          <div class="box align-center">
+            <div class="blog-authors">
+            <a href="{{ author.url }}"><img alt="{{author.name}}" src="{{ author.img | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
+            <span class="blog-author-name"><a href="{{ author.url }}"><h5><b>{{ author.name }}</b></h5></a></span>
+            </div>
+            <p class="align-left blog-author-text">{{ author.biography | truncatewords: 20 }}</p>
+          </div>
+          {% endcapture %}
+          {% assign author_box = author_box | push: div %}
           {% endif %}
-        </div>
-      {% endif %}
-
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
-
-      <ul class="pager blog-pager">
-        {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
-
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
-        </div>
-      {% endif %}
+        {% endfor %}        
+        <h4 class="author-written">Written by</h4>
+        {{ author_box }}
+        {% include ad_blog_side.html %}
+      </header> 
+    </section>
     </div>
+
+    
+    <script>
+
+    var disqus_config = function () {
+    this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
+    this.page.identifier = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
+    };
+      
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ubc-envision.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+      
+    <footer>
+      <hr>
+      <p>Like this article? <b>Read More</b>:</p>
+      <ul class="actions small">
+        <li><a href="/blog/" class="button special small">Back To Blog</a></li>
+      </ul>
+    </footer>
   </div>
-</div>
+</section>
