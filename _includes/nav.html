@@ -13,7 +13,7 @@
 	<div class="wrap">
 		<ul class="wrap-nav">
 			<li>
-			<a href="/">HOME</a></li>
+			<a href="{{site.url}}">HOME</a></li>
 			<ul>
 			    {% for item in site.data.nav.pages %}
 			      <li><a class="smooth-scroll-middle" href="{{ item.url }}" itemprop="url" alt="{{ item.title }}" title="{{ item.title }}"><span itemprop='name'>{{ item.title }}</span></a></li>
