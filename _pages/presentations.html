@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Presentations
-permalink: /presentations
+permalink: /presentations/
 ---
 
 <section class="wrapper style1 content-align-left">
@@ -17,7 +17,7 @@ permalink: /presentations
           <h3>{{ news.date | date_to_long_string }}</h3>
         </header>
         <div class="content">
-          <p class="major"><a class="article-title" href="{{ news.url }}">{{ news.title }}</a></p>
+          <p class="major"><a class="article-title" href="{{site.baseurl}}/{{ news.url }}">{{ news.title }}</a></p>
           {{ news.excerpt | truncatewords: 70}}
         </div>
       </section>

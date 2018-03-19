@@ -16,7 +16,7 @@ layout: default
 
 <section class="wrapper style1 content-align-left">
   <div class="inner">
-    <p><a href="/blog/"><h3>Envision <strong>Blog</strong></h3></a></p>
+    <p><a href="/blog"><h3>Envision <strong>Blog</strong></h3></a></p>
     <header class="align-center box no-mathjax blog-header">
       <h1 id="post-title" title="Article Title" itemprop="name">{{ page.title }}</h1>
       <p id="post-author" title="Article Authors" itemprop="author">By 
@@ -53,7 +53,7 @@ layout: default
           {% capture div %}
           <div class="box align-center">
             <div class="blog-authors">
-            <img alt="{{name}}" src="{{ '/assets/images/members/default.png' | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
+            <img alt="{{name}}" src="{{site.baseurl}}/assets/images/members/default.png' | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
             <span class="blog-author-name">{{name}}</span>
             </div>
           </div>
@@ -101,7 +101,7 @@ layout: default
       <hr>
       <p>Like this article? <b>Read More</b>:</p>
       <ul class="actions small">
-        <li><a href="/blog/" class="button special small">Back To Blog</a></li>
+        <li><a href="/blog" class="button special small">Back To Blog</a></li>
       </ul>
     </footer>
   </div>

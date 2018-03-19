@@ -10,7 +10,7 @@ layout: default
     <div class="index">
       <section>
         <header class="align-center">
-          <img alt="{{page.name}}" src="{{ page.img | prepend: site.baseurl | prepend: site.url }}" class="img-team img-profile-page">
+          <img alt="{{page.name}}" src="/adchem/{{ page.img | prepend: site.baseurl | prepend: site.url }}/" class="img-team img-profile-page">
           <h4>
             <b>
               {{ page.name }}        
@@ -56,7 +56,7 @@ layout: default
           {% if page.previous %}
           <li><a href="{{ page.previous.url }}" class="button small">&larr; Previous Member</a></li>
           {% endif %}
-          <li><a href="/team/" class="button special small">Team Members</a></li>
+          <li><a href="/team" class="button special small">Team Members</a></li>
           {% if page.next %}
           <li> <a href="{{ page.next.url }}" class="button small">Next Member &rarr;</a></li>
           {% endif %}
