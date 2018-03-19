@@ -15,7 +15,7 @@ layout: default
 
 <section class="wrapper style1 content-align-left">
   <div class="inner">
-    <p><a href="/news/"><h3>ADCHEM UBC <strong>Presentations</strong></h3></a></p>
+    <p><a href="{{site.baseurl}}/news"><h3>ADCHEM UBC <strong>Presentations</strong></h3></a></p>
     <header class="align-center box no-mathjax blog-header">
       <h1 id="post-title">{{ page.title }}</h1>
       <p><small>{{ page.date | date: "%b %-d, %Y" }}</small></p>
@@ -33,7 +33,7 @@ layout: default
           {% capture div %}
           <div class="box align-center">
             <div class="blog-authors">
-            <img alt="{{name}}" src="{{ '/assets/images/members/default.png' | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
+            <img alt="{{name}}" src="{{site.baseurl}}/assets/images/members/default.png' | prepend: site.baseurl | prepend: site.url }}" class="img-team img-team-blog" style="vertical-align:middle;"></a>
             <span class="blog-author-name">{{name}}</span>
             </div>
           </div>
@@ -60,7 +60,7 @@ layout: default
       <footer>
         <hr>
         <ul class="actions">
-          <li><a href="/presentations/" class="button special medium">Back To Presentations</a></li>
+          <li><a href="{{site.baseurl}}/presentations" class="button special medium">Back To Presentations</a></li>
         </ul>
       </footer>
   </div>

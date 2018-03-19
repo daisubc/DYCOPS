@@ -2,7 +2,7 @@
 layout: news
 title:  "The Emerging Role of Big Data, Data Analytics, and Machine Learning in the Process Industries"
 date:   2016-11-27
-permalink: /bigdataanalytics
+permalink: /adchem/bigdataanalytics/
 ---
 ### A Presentation by Dr. Richard Braatz
 Big Data, data analytics, and machine learning have opportunities for diagnostic, prognostics and decision making in the process industries. This presentation describe the emerging role of these tools, including for:

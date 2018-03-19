@@ -2,7 +2,7 @@
 layout: news
 title:  "Sensor and Alarm Data Tools for Process Analytics"
 date:   2018-03-11
-permalink: /tools_processanalytics
+permalink: /adchem/tools_processanalytics/
 ---
 ### A Presentation by Dr. Sirish L. Shah
 Process data analytic methods rely on the notion of sensor fusion whereby data from many sensors and alarm tags are combined with process information, such as physical connectivity of process units, to give a holistic picture of health of an integrated plant. The discovery and learning from process data refers to a set of tools and techniques for modeling and understanding of complex data sets. 
