@@ -13,54 +13,14 @@
             <p class="major">{{ page.headline }}</p>
             <p>{{ page.description }}</p>
           </div>
-          <div class="image">
-            <img src="{{ page.image }}" alt=" {{page.name}} " />
-          </div>
-       </section>
-       <section class="style1 wrapper container">
-         <div class="inner">
-           <h2>Project</h2>
-           <div class="box">
-           <p>{{ page.box }}</p>
-          </div>
-        </div>
-      </section>          
+       </section>          
           
       <section class="style1 wrapper">
         <div class="inner">
           <div class="index">
-            <section>
-              <header>
-                <h3>Project Details</h3>
-              </header>     
+           <section>    
               <div class="content">
                 {{ content }}
-              </div>
-            </section>
-          </div>
-        </div>
-      </section>
-      <section class="style1 wrapper">
-        <div class="inner">
-          <div class="index">
-            <section>
-              <header>
-                <h3>Team Members</h3>
-              </header>     
-              <div class="content align-center">
-                <div class="items style3 small onload-fade-in">
-                {% assign members = site.members | sort: 'subweight' %}
-                {% for member in members %}
-                {% if member.project == page.project %}
-                <section>
-                  <a href="{{ member.url }}"><img alt="{{member.name}}" src="{{ member.img | prepend: site.baseurl | prepend: site.url }}" class="img-team"></a>
-                  <h4><b>{{ member.name }}</b> 
-                  <br>
-                  <i>{{ member.title }}</i></h4>
-                </section>
-                {% endif %}
-                {% endfor %}
-                </div>
               </div>
             </section>
           </div>

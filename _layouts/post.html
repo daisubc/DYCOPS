@@ -44,8 +44,6 @@ layout: default
           <hr>
         </section>
         {% include ad_blog.html %}
-        <h2><b>Comments</b></h2>
-        <div id="disqus_thread"></div>
       </div>
       <header>
         {% assign author_box = "" | split: ":" %}
@@ -74,7 +72,7 @@ layout: default
           {% assign author_box = author_box | push: div %}
           {% endif %}
         {% endfor %}        
-        <h4 class="author-written">Written with :heart: by</h4>
+        <h4 class="author-written">Written by</h4>
         {{ author_box }}
         {% include ad_blog_side.html %}
       </header> 

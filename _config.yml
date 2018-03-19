@@ -3,12 +3,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: UBC Envision
-email: contact@ubcenvision.com
+title: ADCHEM UBC
 description: >- # this means to ignore newlines until "baseurl:"
-  UBC Envision: The UBC AIChE Student Chapter
+  Data Analysis Workshop
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.ubcenvision.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.dais.chbe.ubc.ca/adchem" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
@@ -24,7 +23,7 @@ collections:
     permalink: /members/:path/
     
 exclude: [vendor]
-include: ["_pages", "_projects"]
+include: ["_pages"]
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

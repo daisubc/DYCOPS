@@ -25,9 +25,9 @@
 	    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>	
 	{% if page.layout == 'member' %}	
-	<title>{{ page.name }} | UBC Envision</title>
+	<title>{{ page.name }}</title>
 	{% else %}
-	<title>{% if page.title %} {{ page.title }} | {% endif %}UBC Envision</title>
+	<title>{% if page.title %} {{ page.title }} {% endif %}</title>
 	{% endif %}
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,14 +35,14 @@
 	{% assign description = page.excerpt | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip |  truncatewords: 35 %}
 	<meta name="description" content="{{ description }}">
 	{% else %}
-	<meta name="description" content="UBC Envision is the AIChE (American Institute of Chemical Engineers) student chapter at the University of British Columbia.">
+	<meta name="description" content="ADCHEM is a Data Analytics workshop to be held in Shengyang, China, from July 25-27 2018.">
 	{% endif %}
 
 	<link rel="stylesheet" href="/assets/css/main.css" />
-	<link rel="stylesheet" href="/assets/css/envision.css" />
+	<link rel="stylesheet" href="/assets/css/adchem.css" />
 	<link rel="stylesheet" href="/assets/css/sidebar.css" />
 	<link rel="stylesheet" href="/assets/css/remodal.css">
 	<link rel="stylesheet" href="/assets/css/remodal-default-theme.css">
 	<link rel="stylesheet" href="/assets/css/instafeed.css">
-	<link rel="shortcut icon" href="/assets/favicon.ico">
+	<link rel="shortcut icon" href="/assets/images/adchem.ico">
 </head>

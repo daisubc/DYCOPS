@@ -6,7 +6,6 @@ layout: default
   <div class="inner">
     <header>
     <h2><b><a href="/team/">{{ page.name }}</a></b></h2>
-    <p>Envision <b>Profile</b></p>
     </header>
     <div class="index">
       <section>
@@ -24,9 +23,7 @@ layout: default
           {{ page.biography }}
           <div class="index">
             <section>
-              <header>
-                <h5><b>Contact Information</b></h5>
-              </header>
+
               <div class="content">
                 {% if page.email %}
                 <h4>
@@ -35,11 +32,8 @@ layout: default
                 </h4>
                 {% endif %}         
                 <ul class="icons">
-                {% if page.linkedin %}
-                  <li><a href="{{ page.linkedin }}" class="icon style2 fa fa-linkedin" target="_blank"></a></li>
-                {% endif %}
                 {% if page.email %}
-                  <li><a href="mailto:{{ page.email }}" class="icon style2 fa fa-envelope" target="_blank"></a></li>
+                  
                 {% endif %}            
                 {% if page.website %}
                   <li><a href="{{ page.website }}" class="icon style2 fa fa-home" target="_blank"></a></li>
@@ -50,7 +44,8 @@ layout: default
           </div>
 
           {% assign articles_with_author =  site.categories.blog | where_exp:"article", "article.author contains page.name" %}
-          {% unless articles_with_author.size == 0 %}
+          <!-- {% unless articles_with_author.size == 0 %}
+>>>>>>> 1eb7f9bc4a05f824392876ec33062d8be5af52a0
             <div class="index">
               <section>
                 <header>
@@ -78,7 +73,10 @@ layout: default
                 </div>
               </section>
             </div>
+<<<<<<< HEAD
           {% endunless %}
+=======
+          {% endunless %} -->
         </div>                    
       </section>
     </div>

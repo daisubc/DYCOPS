@@ -1,22 +1,13 @@
 pages:
 
 - title: About
-  url: /about/
+  url: /about
 
 - title: Team
-  url: /team/
+  url: /team
 
-- title: Projects
-  url: /projects/
+- title: Course Plan
+  url: /courseplan
 
-- title: News
-  url: /news/
-
-- title: Blog
-  url: /blog/
-
-- title: Recruitment
-  url: /recruitment/
-
-- title: Sponsorship
-  url: /sponsorship/
+- title: Presentations
+  url: /presentations
