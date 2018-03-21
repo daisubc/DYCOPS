@@ -4,9 +4,6 @@ title: About ADCHEM
 permalink: /about/
 ---
 
-## ADCHEM 2018
-ADCHEM is a triennial symposium that brings together researchers and professionals worldwide, to facilitate discussions about the development of control and modelling in chemical, biomedical, and other processing systems. For more information, visit the <a href="http://www.adchem2018.org/">Official ADCHEM 2018 page</a>. 
-
 ## Our Data Analytics Workshop
 This workshop will introduce the essential machine learning algorithms and software tools for graduate students, experienced researchers, and engineers working in the industry. Elementary knowledge of probability and statistics is required to attend this workshop. The workshop will also feature at least two confirmed guest speakers with decades of experience in data analytics. Prof. Sirish L. Shah of the University of Alberta and Prof. Richard D. Braatz of the Massachusetts Institute of Technology have both agreed to speak during the workshop. We have also invited an industrial guest speaker. 
 
