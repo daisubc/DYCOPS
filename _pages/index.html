@@ -29,7 +29,7 @@ permalink: /
 				{% for member in members %}
 				{% unless member.status contains 'board' or member.status contains 'alumni' %}
 				<section>
-					<img alt="{{member.name}}" src="{{ member.img | prepend: site.baseurl | prepend: site.url }}" class="onscroll-image-fade-in img-team">
+					<img alt="{{member.name}}" src="{{ member.img | prepend: site.url }}" class="onscroll-image-fade-in img-team">
 					<h4><b>{{ member.name }}</b> 
 						{% if member.linkedin %}
 						| <a href="{{ member.linkedin }}" class="fa fa-linkedin" target="_blank"></a>
