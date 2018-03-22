@@ -3,11 +3,5 @@ pages:
 - title: About
   url: /adchem/about/
 
-- title: Team
-  url: /adchem/team/
-
 - title: Course Plan
   url: /adchem/courseplan/
-
-- title: Presentations
-  url: /adchem/presentations/

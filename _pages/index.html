@@ -7,16 +7,54 @@ permalink: /
 <section class="banner style1 orient-left content-align-center fullscreen">
 	<div class="content">
 		<header>
-			<h1><strong>ADCHEM </strong>UBC</h1>
-			<p><strong>Paving the way for the next industrial revolution through data.</strong></p>
+			<h1><strong>ADCHEM </strong>2018</h1>
+			<p><strong>Paving the way for the next industrial revolution through data</strong></p>
+			<h3 style="font-weight: 300">July 25 - 27, 2018 <br>Shengyang, Liaoning, China</h3><hr>
 		</header>
-		<p class="major">Our team from the <a href="http://dais.chbe.ubc.ca">UBC Data Analytics and Intelligent Systems Lab</a> will conduct a series of presentations focused on machine learning algorithms with an emphasis on process control applications.
+		<p class="major">Our team from the <a href="http://dais.chbe.ubc.ca">UBC Data Analytics and Intelligent Systems Lab</a> will conduct a series of presentations focused on machine learning algorithms with an emphasis on process control applications. <br><br>ADCHEM is a triennial symposium that brings together researchers and professionals worldwide, to facilitate discussions about the development of control and modelling in chemical, biomedical, and other processing systems. For more information, visit the <a href="http://www.adchem2018.org/">Official ADCHEM 2018 page</a>.</p>
 		<ul class="actions">
 			<li><a href="/adchem/about" class="button big wide smooth-scroll-middle">Find Out More</a></li>
-			<li><a href="/adchem/courseplan" class="button big wide special smooth-scroll-middle">Our Course Plan</a></li>
 		</ul>
 	</div>
 </section>
+
+{% assign members = site.members | sort: 'weight' %}
+<section class="banner style2 content-align-center" id="second">
+	<div class="inner">
+		<header>    
+	        <h1><strong>Team</strong></h1>      
+	     </header>	
+
+		<div class="items style1 medium">
+				{% for member in members %}
+				{% unless member.status contains 'board' or member.status contains 'alumni' %}
+				<section>
+					<img alt="{{member.name}}" src="{{ member.img | prepend: site.baseurl | prepend: site.url }}" class="onscroll-image-fade-in img-team">
+					<h4><b>{{ member.name }}</b> 
+						{% if member.linkedin %}
+						| <a href="{{ member.linkedin }}" class="fa fa-linkedin" target="_blank"></a>
+						{% endif %}
+						{% if member.website %}
+						| <a href="{{ member.website }}" class="fa fa-home" target="_blank"></a>
+						{% endif %}
+						<br>
+						</h4>
+					<h5>
+						<p>
+							{{member.biography}}
+						</p>
+					</h5>
+					{% if member.email %}
+						<i class="fa fa-envelope"></i> 
+						<a href="mailto:{{member.email}}">{{member.email}}</a>
+					</h5>
+					{% endif %}
+				</section>
+				{% endunless %}
+				{% endfor %}
+			</div>
+		</div>
+	</section>
 
 <section class="banner style2 content-align-center" id="second">
 	<div class="inner">
@@ -38,5 +76,35 @@ permalink: /
 				<p>Classification and regression are two of the primary applications of machine learning. In process control, there are many applications for classification and regression, as they allow data sets to be analyzed effectively.</p>
 			</section>
 		</div>
+		<br>
+		<h2>Workshop Overview</h2>
+		<p>We are currently at the cusp of what is considered the fourth industrial revolution. This revolution is driven by the ubiquitous cyber-physical systems, algorithmic developments in artificial intelligence, gargantuan computing power, inexpensive memory and the gigantic volumes of data that are being collected. The process industries are in possession of treasure troves of heterogenous data that is gravely under utilized. The competitive global environment, and the ever increasing demands on energy, environment and quality are subjecting these industries to a high level of economic pressure. The incredible volumes of data that they already possess are poised to provide a level of automation and efficiency never seen before and thus alleviate the economic and competitive pressures.
+
+		Process industries have been using data analytics in various forms for more than three decades. In particular, statistical techniques such as principal component analysis (PCA), partial least squares (PLS), canonical variate analysis (CVA) and time series methods for modeling such as maximum likelihood estimation, prediction error methods have been extensively applied on industrial data. The recent developments in machine learning and artificial intelligence provide a new opening for using process data on large scale problems. However, in order to successfully apply machine learning methods to process data, researchers require not only a high level understanding of the algorithms but also strong programming knowledge in packages such as Python, TensorFlow, Keras and Jupyter.</p>
+
+		<ul class="actions">
+			<li><a href="/courseplan/" class="button medium wide">Course Plan</a></li>
+		</ul>
 	</div>
 </section>
+
+<section class="banner style2 content-align-center" id="second">
+	<div class="inner">
+      <header>
+          <h1><strong>Presentations</strong></h1>
+      </header>
+
+      <div class="index align-left">
+      {% for news in site.categories.news %}
+      <section>
+        <div class="content">
+          <p class="major"><a class="article-title" href="{{site.baseurl}}/{{ news.url }}">{{ news.title }}</a></p>
+          {{ news.excerpt | truncatewords: 70}}
+        </div>
+      </section>
+      {% endfor %}
+      </div>
+
+  </div>
+</section>
+
