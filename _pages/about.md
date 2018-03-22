@@ -12,13 +12,6 @@ We are currently at the cusp of what is considered the fourth industrial revolut
 
 Process industries have been using data analytics in various forms for more than three decades. In particular, statistical techniques such as principal component analysis (PCA), partial least squares (PLS), canonical variate analysis (CVA) and time series methods for modeling such as maximum likelihood estimation, prediction error methods have been extensively applied on industrial data. The recent developments in machine learning and artificial intelligence provide a new opening for using process data on large scale problems. However, in order to successfully apply machine learning methods to process data, researchers require not only a high level understanding of the algorithms but also strong programming knowledge in packages such as Python, TensorFlow, Keras and Jupyter.
 
-## Presentations
-Our presentations cover a range of topics, including Big Data Analytics, Dimensionality Manipulation, and Alarm and Sensor Data Management. 
-
-<ul class="actions">
-	<li><a href="/presentations/" class="button medium wide">Presentations</a></li>
-</ul>
-
 ## Course Plan
 This workshop will cover many aspects of machine learning, such as regression, classification, adn dimensionality reduction, with a focus on process control applications. 
 
