@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Emerging Role of Big Data, Data Analytics, and Machine Learning in the Process Industries
-subtitle: A presentation by Dr. Richard D. Braatz
+subtitle: By Dr. Richard Braatz
 tags: 
 ---
 

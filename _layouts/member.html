@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<section class="wrapper style1 content-align-left">
+  <div class="inner">
+    <header>
+    <h2><b><a href="/team/">{{ page.name }}</a></b></h2>
+    </header>
+    <div class="index">
+      <section>
+        <header class="align-center">
+          <img alt="{{page.name}}" src="{{ page.img | prepend: site.baseurl | prepend: site.url }}" class="img-team img-profile-page">
+          <h4>
+            <b>
+              {{ page.name }}        
+            </b>
+            <br>
+            {{ page.title }}           
+          </h4>   
+        </header>     
+        <div class="content align-left">
+          {{ page.biography }}
+          <div class="index">
+            <section>
+              <div class="content">
+                {% if page.email %}
+                <h4>
+                  <i class="fa fa-envelope"></i> 
+                  <a href="mailto:{{page.email}}">{{page.email}}</a>
+                </h4>
+                {% endif %}         
+                <ul class="icons">
+                {% if page.email %}
+                  
+                {% endif %}            
+                {% if page.website %}
+                  <li><a href="{{ page.website }}" class="icon style2 fa fa-home" target="_blank"></a></li>
+                {% endif %}
+                </ul> 
+              </div>
+            </section>
+          </div>
+
+          {% assign articles_with_author =  site.categories.blog | where_exp:"article", "article.author contains page.name" %}
+          <!-- {% unless articles_with_author.size == 0 %}
+            <div class="index">
+              <section>
+                <header>
+                  <h5><b>Contributed Articles</b></h5>
+                </header>
+                <div class="content">
+                <ol>
+                {% for post in articles_with_author %}
+                  {% assign author_array = "" | split: "," %}
+                  {% for name in post.author %}
+                    {% assign author = site.members | where:"name", name | first %}
+                    {% if author == null %}
+                    {% assign author_array = author_array | push: name %}
+                    {% else %}
+                    {% capture link %}<a href="{{ author.url }}">{{ author.name }}</a>{% endcapture %}
+                    {% assign author_array = author_array | push: link %}
+                    {% endif %}
+                  {% endfor %}                                   
+                  <li>
+                    <h4><b><a href="{{ post.url }}">{{ post.title }}</a></b></h4>
+                    <p>{{ post.date | date: "%b %-d, %Y"}} &middot; <i>{{ author_array | array_to_sentence_string }}</i></p>
+                  </li>
+                {% endfor %}
+                </ol>
+                </div>
+              </section>
+            </div>
+          {% endunless %} -->
+        </div>                    
+      </section>
+    </div>
+</div>
+
+  <div class="inner">
+      <hr>
+      <footer>
+        <ul class="actions small">
+          {% if page.previous %}
+          <li><a href="{{ page.previous.url }}" class="button small">&larr; Previous Member</a></li>
+          {% endif %}
+          <li><a href="/team/" class="button special small">Team Members</a></li>
+          {% if page.next %}
+          <li> <a href="{{ page.next.url }}" class="button small">Next Member &rarr;</a></li>
+          {% endif %}
+        </ul>
+      </footer>
+  </div>
+</section>

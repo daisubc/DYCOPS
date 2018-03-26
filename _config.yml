@@ -9,12 +9,12 @@
 
 # If you are building a GitHub project page then use these settings:
 url: "http://daisubc.github.io/adchem"
-baseurl: "/adchem"
+baseurl: "/adchem/"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: ADCHEM
+title: Advanced Tools for Data Analytics Workshop
 # Short description of your site
 description: DAIS UBC
 
@@ -24,14 +24,13 @@ description: DAIS UBC
 navbar-links:
   Workshop Details:
     - Course Plan: "courseplan"
-    - Presentations: "presentations"
     - Schedule: "schedule"
-    - Our People: "people"
+    - Contact: "contact"
 
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/adchem.png"
+avatar: 
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -131,6 +130,10 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+collections:
+  members:
+    output: true
+    permalink: /members/:path/
 
 kramdown:
   input: GFM

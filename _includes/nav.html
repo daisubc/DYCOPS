@@ -10,7 +10,7 @@
       {% if site.title-img %}
       <img src="{{ site.title-img }}"/>
       {% else %}
-        <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ site.url | append: site.baseurl }}">Home</a>
       {% endif %}
     </div>
 

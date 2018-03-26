@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sensor and Alarm Data Tools for Process Analytics
-subtitle: A presentation by Dr. Sirish L. Shah
+subtitle: By Dr. Sirish L. Shah
 tags: 
 ---
 

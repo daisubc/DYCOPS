@@ -23,7 +23,7 @@ p {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 a {
   color: {{ site.link-col }};
@@ -65,6 +65,11 @@ hr.small {
   display: none;
 }
 
+#guest_organizers {
+  border-right: 1px;
+  border-top: 1px;
+}
+
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -86,6 +91,8 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+  height: 180px;
+  width: auto;
 }
 
 .disqus-comments {
@@ -101,6 +108,18 @@ img {
 .linked-section {
   padding-top: 60px;
   margin-top: -25px;
+}
+
+.biography {
+  text-align: left;
+  padding: 10px 15px 10px 10px;
+  border-left-style: solid;
+  border-width: thick;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-bottom-style: hidden;
+  border-left-color: #898989;
+  background-color: #EEEEEE;
 }
 
 /* --- Navbar --- */
@@ -470,11 +489,11 @@ footer .theme-by {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 28px;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;
-  font-size: 35px;
+  font-size: 28px;
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
