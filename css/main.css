@@ -606,6 +606,12 @@ footer .theme-by {
   }
 }
 
+#desc_overview {
+  padding-right: 25px;
+  padding-left: 0px;
+  margin-;left: 0px;
+}
+
 /* --- Pager --- */
 
 .pager li a {
