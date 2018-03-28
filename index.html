@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Advanced Tools for Data Analytics
-subtitle: At ADCHEM 2018 <br><br>July 24<sup>th</sup>, 2018 <br><br>Shengyang, China
+subtitle: Workshop at ADCHEM 2018 on July 24<sup>th</sup>, 2018 in Shengyang, China
 use-site-title: true
 permalink: "/"
 ---
@@ -9,146 +9,93 @@ permalink: "/"
 
 <div class="container-fluid" role="main">
   <div class="row">
-    <div class="container-fluid col-md-6" id="guest_organizers">
+    <div class="container-fluid col-sm-3" id="guest_organizers" style="margin-top: 20px;">
       <!-- IMAGES AND BIOS -->
-
-<!--         {% for member in members %}
-        {% if member.status contains 'guest' %}
-          <section>
-            <br><img alt="{{member.name}}" src="{{ member.img | prepend: site.baseurl | prepend: site.url }}" class="onscroll-image-fade-in img-team">
-            <h4><b>{{ member.name }}</b></h4>
-            <span class="biolink">
-              <a class="bio post-entry">Biography</a>
-            </span>
-            <span class="bio hidden">
-              <p class="post-entry">
-                {{ member.biography }}
-              </p>
-            </span>
-          </section>
-          {% endif %}
-        {% endfor %} -->
-
-        <h2 class="post-title" style="font-weight: 800">Guest Speakers</h2><hr>
-        <div class="row">
-          <div class="col-sm-6">
-            <section>
-          <br><img alt="Dr. Richard Braatz" src="img/braatz.jpg" class="onscroll-image-fade-in img-team">
-          <h4><b>Dr. Richard Braatz</b><br></h4>
-          <button onclick="biofunc1()">Biography</button>
-
-          <div id="bio_braatz">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_braatz");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Dr. Braatz's research is in applied mathematics and control theory and its application to manufacturing systems where the control of events at the molecular scale is key to product quality. For more information, see Dr. Braatz's <a href="web.mit.edu/braatzgroup/">group page</a>.</p>
-          </div>  
-        </section>
-        </div>
-
-        <div class="col-sm-6">
-          <section>
-          <br><img alt="Dr. Sirish Shah" src="img/shah.jpg" class="onscroll-image-fade-in img-team">
-          <h4><b>Dr. Sirish Shah</b><br></h4>
-          <button onclick="biofunc2()">Biography</button>
-
-          <div id="bio_shah">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_shah");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Sirish L. Shah has been with the University of Alberta since 1978, where he held the NSERC-MatrikonSuncor-iCORE Senior Industrial Research Chair in Computer Process Control from 2000 to 2012. The main areas of his current research are process and performance monitoring, and analysis and rationalization of alarm systems. He has co-authored three books, the first titled, "Performace Assessment of Control Loops: Theory and Applications", a second titled "Diagnosis of Process Nonlinearities and Valve Stiction: Data Driven Approaches", and a more recent monograph on "Capturing connectivity and causality in complex industrial processes".</p>
-          </div>  
-        </section>
-        </div>
-
-        </div>
-        <br>
-        <h2 class="post-title" style="font-weight: 800">Organizers</h2><hr>
-        <div class="row">
-        <div class="col-sm-6">
-        <section>
-          <br><img alt="Dr. Bhushan Gopaluni" src="img/bhushan.jpg" class="onscroll-image-fade-in img-team">
-          <h4><b>Dr. Bhushan Gopaluni</b><br></h4>
-          <button onclick="biofunc3()">Biography</button>
-
-          <div id="bio_bhushan">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_bhushan");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Dr. Gopaluni's primary research interests are in Process Modeling and Control. He is interested in developing and studying the properties of data-based models for a variety of chemical and biological systems. These systems are typically nonlinear, hybrid and time varying, and their measurements are often noisy and irregular. The thrust of his research is on developing high quality models for such processes and adapting them to reflect process changes. His research interests also span a wide range of other areas including identification for control, model predictive controllers, adaptive control, and performance monitoring and assessment.</p>
-          </div>  
-        </section>
-
-        <section>
-          <br><img alt="Lee Rippon" src="img/lee.jpg" class="onscroll-image-fade-in img-team">
-          <h4><b>Lee Rippon</b><br></h4>
-          <button onclick="biofunc4()">Biography</button>
-
-          <div id="bio_lee">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_lee");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Lee Rippon is a PhD student studying Chemical and Biologial Engineering (CHBE) at UBC. He also holds BASc and MASc degrees from UBC in CHBE where his research experience includes applications of compressive sensing, adaptive control, system identification and process monitoring on sheet and film processes. His current research interests include applying statistical machine learning techniques to historical process data to perform fault detection, isolation, and diagnosis in a kraft process.</p>
-          </div>  
-        </section>
-      </div>
-
-      <div class="row">
-      <div class="col-sm-6">
-        <section>
-          <br><img alt="Yiting Tsai" src="img/yiting2.png" class="onscroll-image-fade-in img-team">
-          <h4><b>Yiting Tsai</b><br></h4>
-          <button onclick="biofunc5()">Biography</button>
-
-          <div id="bio_yiting">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_yiting");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Yiting has finished both his BASc and MASc degrees at CHBE. His interests are process control and statistical modeelling of time-series data. His current PhD research focuses on the application of Machine Learning techniques to design smart controllers, which identify and predict process faults ahead of time and apply appropriate control actions to prevent such faults.</p>
-          </div>  
-        </section>
-
-        <section>
-          <br><img alt="Aditya Tulsyan" src="img/aditya2.png" class="onscroll-image-fade-in img-team">
-          <h4><b>Aditya Tulsyan</b><br></h4>
-          <button onclick="biofunc6()">Biography</button>
-
-          <div id="bio_aditya">
-            <script type="text/javascript">
-              var k = document.getElementById("bio_aditya");
-              k.style.display = "none";
-            </script>
-            <p class="post-entry biography">Aditya Tulsyan is a Postdoctoral Associate in the Process Systems Engineering Laboratory at MIT. His current research focuses on developing efficient global dynamic optimization methods for identification and control of large-scale nonlinear dynamical models.</p>
-          </div>  
-        </section>
-      </div>
+      <h4 class="navlink"><a href="#overview">Workshop Overview</a></h4><br>
+      <h4 class="navlink"><a href="#guests">Guest Speakers</a></h4><br>
+      <h4 class="navlink"><a href="#organizers">Organizers</a></h4><br>
+      <h4 class="navlink"><a href="#abstracts">Abstracts</a></h4><br>
     </div>
+    <div class="container-fluid col-sm-9">
+      <h2 class="post-title" style="font-weight: 800">Description</h2>  
+      <p class="post-entry" style="text-align: left"> This workshop will introduce the essential machine learning algorithms and software tools for graduate students, experienced researchers and engineers working in the industry. Elementary knowledge of probability and statistics is required to attend this workshop. The workshop will also feature at least two confirmed guest speakers with decades of experience in data analytics. Prof. Sirish L. Shah of University of Alberta and Prof. Richard D. Braatz of Massachusetts Institute of Technology have both agreed to speak during the workshop. We have also invited an industrial guest speaker.</p>
     </div>
   </div>
-    <div class="container-fluid col-md-6" id="desc_overview">
+
+  <h2 class="post-title" style="font-weight: 800" name="overview"><a name="overview"></a>Workshop Overview</h2><hr>
+    <p class="post-entry" style="text-align: left">We are currently at the cusp of what is considered the fourth industrial revolution. This revolution is driven by the ubiquitous cyber-physical systems, algorithmic developments in artificial intelligence, gargantuan computing power, inexpensive memory and the gigantic volumes of data that are being collected. The process industries are in possession of treasure troves of heterogenous data that is gravely under utilized. The competitive global environment, and the ever increasing demands on energy, environment and quality are subjecting these industries to a high level of economic pressure. The incredible volumes of data that they already possess are poised to provide a level of automation and efficiency never seen before and thus alleviate the economic and competitive pressures.<br><br>Process industries have been using data analytics in various forms for more than three decades. In particular, statistical techniques such as principal component analysis (PCA), partial least squares (PLS), canonical variate analysis (CVA) and time series methods for modeling such as maximum likelihood estimation, prediction error methods have been extensively applied on industrial data. The recent developments in machine learning and artificial intelligence provide a new opening for using process data on large scale problems. However, in order to successfully apply machine learning methods to process data, researchers require not only a high level understanding of the algorithms but also strong programming knowledge in packages such as Python, TensorFlow, Keras and Jupyter.</p>
+
+  
+
+    <h2 class="post-title" style="font-weight: 800"><a name="guests"></a>Guest Speakers</h2><hr>
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Dr. Richard Braatz" src="img/braatz.jpg" class="onscroll-image-fade-in img-team">
+        <h4><b>Dr. Richard Braatz</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Dr. Braatz's research is in applied mathematics and control theory and its application to manufacturing systems where the control of events at the molecular scale is key to product quality. For more information, see Dr. Braatz's <a href="web.mit.edu/braatzgroup/">group page</a>.</p>
+    </div>
+  </div>
+
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Dr. Sirish Shah" src="img/shah.jpg" class="onscroll-image-fade-in img-team">
+      <h4><b>Dr. Sirish Shah</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Sirish L. Shah has been with the University of Alberta since 1978, where he held the NSERC-MatrikonSuncor-iCORE Senior Industrial Research Chair in Computer Process Control from 2000 to 2012. The main areas of his current research are process and performance monitoring, and analysis and rationalization of alarm systems. He has co-authored three books, the first titled, "Performace Assessment of Control Loops: Theory and Applications", a second titled "Diagnosis of Process Nonlinearities and Valve Stiction: Data Driven Approaches", and a more recent monograph on "Capturing connectivity and causality in complex industrial processes".</p>
+    </div>
+  </div>
+
+  <h2 class="post-title" style="font-weight: 800"><a name="organizers"></a>Organizers</h2><hr>
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Dr. Bhushan Gopaluni" src="img/bhushan.jpg" class="onscroll-image-fade-in img-team">
+        <h4><b>Dr. Bhushan Gopaluni</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Lee Rippon is a PhD student studying Chemical and Biologial Engineering (CHBE) at UBC. He also holds BASc and MASc degrees from UBC in CHBE where his research experience includes applications of compressive sensing, adaptive control, system identification and process monitoring on sheet and film processes. His current research interests include applying statistical machine learning techniques to historical process data to perform fault detection, isolation, and diagnosis in a kraft process.</p>
+    </div>
+  </div>
+
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Lee Rippon" src="img/lee.jpg" class="onscroll-image-fade-in img-team">
+      <h4><b>Lee Rippon</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Lee Rippon is a PhD student studying Chemical and Biologial Engineering (CHBE) at UBC. He also holds BASc and MASc degrees from UBC in CHBE where his research experience includes applications of compressive sensing, adaptive control, system identification and process monitoring on sheet and film processes. His current research interests include applying statistical machine learning techniques to historical process data to perform fault detection, isolation, and diagnosis in a kraft process.</p>
+    </div>
+  </div>
+
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Yiting Tsai" src="img/yiting2.png" class="onscroll-image-fade-in img-team">
+      <h4><b>Yiting Tsai</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Yiting has finished both his BASc and MASc degrees at CHBE. His interests are process control and statistical modeelling of time-series data. His current PhD research focuses on the application of Machine Learning techniques to design smart controllers, which identify and predict process faults ahead of time and apply appropriate control actions to prevent such faults.</p>
+    </div>
+  </div>
+
+  <div class="row biorow">
+    <div class="container-fluid col-sm-3" id="guest_organizers">
+      <!-- IMAGES AND BIOS -->
+      <img alt="Aditya Tulsyan" src="img/aditya2.png" class="onscroll-image-fade-in img-team">
+          <h4><b>Aditya Tulsyan</b><br></h4>
+    </div>
+    <div class="container-fluid col-sm-9">
+      <p class="post-entry biography">Aditya Tulsyan is a Postdoctoral Associate in the Process Systems Engineering Laboratory at MIT. His current research focuses on developing efficient global dynamic optimization methods for identification and control of large-scale nonlinear dynamical models.</p>
+    </div>
+  </div>
       <div class="row">
-        <h2 class="post-title" style="font-weight: 800">Description</h2>    
-
-        <div class="container-fluid">
-          <p class="post-entry" style="text-align: left"> This workshop will introduce the essential machine learning algorithms and software tools for graduate students, experienced researchers and engineers working in the industry. Elementary knowledge of probability and statistics is required to attend this workshop. The workshop will also feature at least two confirmed guest speakers with decades of experience in data analytics. Prof. Sirish L. Shah of University of Alberta and Prof. Richard D. Braatz of Massachusetts Institute of Technology have both agreed to speak during the workshop. We have also invited an industrial guest speaker.</p>
-        </div>
-      </div>
-
-      <div class="row">
-      <h2 class="post-title" style="font-weight: 800">Workshop Overview</h2>
-
-
-        <div class="container-fluid">
-          <p class="post-entry" style="text-align: left">We are currently at the cusp of what is considered the fourth industrial revolution. This revolution is driven by the ubiquitous cyber-physical systems, algorithmic developments in artificial intelligence, gargantuan computing power, inexpensive memory and the gigantic volumes of data that are being collected. The process industries are in possession of treasure troves of heterogenous data that is gravely under utilized. The competitive global environment, and the ever increasing demands on energy, environment and quality are subjecting these industries to a high level of economic pressure. The incredible volumes of data that they already possess are poised to provide a level of automation and efficiency never seen before and thus alleviate the economic and competitive pressures.<br><br>Process industries have been using data analytics in various forms for more than three decades. In particular, statistical techniques such as principal component analysis (PCA), partial least squares (PLS), canonical variate analysis (CVA) and time series methods for modeling such as maximum likelihood estimation, prediction error methods have been extensively applied on industrial data. The recent developments in machine learning and artificial intelligence provide a new opening for using process data on large scale problems. However, in order to successfully apply machine learning methods to process data, researchers require not only a high level understanding of the algorithms but also strong programming knowledge in packages such as Python, TensorFlow, Keras and Jupyter.</p>
-        </div>
-      </div>
-      <div class="row">
-        <h2 class="post-title" style="font-weight: 800">Abstracts</h2>
+        <h2 class="post-title" style="font-weight: 800"><a name="abstracts"></a>Abstracts</h2>
         <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
