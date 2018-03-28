@@ -54,11 +54,11 @@ hr.small {
 }
 
 .main-content {
-  padding-top: 80px;
+  padding-top: 15px;
 }
 @media only screen and (min-width: 768px) {
   .main-content {
-    padding-top: 130px;
+    padding-top: 15px;
   }
 }
 
@@ -102,7 +102,7 @@ img {
 }
 
 .disqus-comments {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 @media only screen and (min-width: 768px) {
