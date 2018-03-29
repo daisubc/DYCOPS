@@ -118,6 +118,13 @@ img {
 
 .biography {
   text-align: left;
+  vertical-align: center  !important; 
+  margin-bottom: 15px;
+}
+
+.bioimg {
+  vertical-align: center;
+  padding: 5px;
 }
 
 /* --- Navbar --- */
@@ -497,7 +504,7 @@ footer .theme-by {
 .biorow {
   vertical-align: center;
   align-content: center;
-  padding: 15px;
+  padding: 5px;
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
