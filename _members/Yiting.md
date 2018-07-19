@@ -2,7 +2,7 @@
 layout: member
 weight: 200
 name: Yiting Tsai
-img: /img/yiting2.png
+img: /img/yiting_new.jpg
 status: organizer
 firstname: yiting
 email: yttsai@chbe.ubc.ca
