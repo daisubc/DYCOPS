@@ -851,3 +851,11 @@ td.gutter {
   vertical-align: center;
   text-align: center;
 }
+
+.software-entry {
+  font-weight: 600;
+  font-size: 16pt;
+  vertical-align: center;
+  text-align:center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
